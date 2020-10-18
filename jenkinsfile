@@ -1,0 +1,12 @@
+pipelinen {
+ agent any
+ 
+ stage {
+ stage('Build Docker Image') {
+ steps {
+ sh 'docker built -t cyberfrat::$BUILD NUMBER .'
+ }
+ }
+ }
+ }
+ 
